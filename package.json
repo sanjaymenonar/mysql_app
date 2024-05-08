@@ -1,0 +1,33 @@
+{
+  "name": "productdemo",
+  "version": "1.0.0",
+  "description": "for test",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node app.js",
+    "start-dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon app.js",
+    "client": "cd client && npm start"
+
+  },
+
+  "author": "Sanjay Menon A R",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-errors": "^2.0.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.7",
+    "react-router-dom": "^6.23.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+
+  
+}
